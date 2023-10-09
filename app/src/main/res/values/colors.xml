@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="main_background">#FFFFFF</color>
+    <color name="empty_list_text_color">#747474</color>
+    <color name="head_color">#000000</color>
+    <color name="card_background">#F5F5F5</color>
+    <color name="error_dialog_message_color">#000000</color>
+    <color name="error_layout_retry_text_color">#747474</color>
+    <color name="hint">#93A2AA</color>
+</resources>

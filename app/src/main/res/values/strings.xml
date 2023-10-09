@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ConvertedIn</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="something_went_wrong_error_message">Oops something went wrong, We\'re looking to see what happened.</string>
+    <string name="empty_list_text">No data found</string>
+    <string name="street">st</string>
+    <string name="home_header">Home</string>
+    <string name="tap_to_retry">Tap to Retry</string>
+    <string name="profile_header">Profile</string>
+    <string name="search_hint">Search...</string>
+</resources>

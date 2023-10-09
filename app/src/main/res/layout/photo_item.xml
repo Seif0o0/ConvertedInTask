@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="photo"
+            type="com.convertedin.task.domain.model.Photo" />
+
+        <variable
+            name="clickListener"
+            type="com.convertedin.task.presentation.utils.ListItemClickListener&lt;com.convertedin.task.domain.model.Photo>" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:onClick="@{() -> clickListener.onItemClickListener(photo)}"
+        app:cardBackgroundColor="@color/card_background"
+        app:cardCornerRadius="0dp"
+        app:strokeColor="@color/black">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:image_url="@{photo.url}"
+            tools:src="@mipmap/ic_launcher" />
+    </com.google.android.material.card.MaterialCardView>
+</layout>
