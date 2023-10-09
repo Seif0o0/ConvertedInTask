@@ -19,7 +19,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/main_background">
 
         <ImageView
             android:id="@+id/back_icon"
@@ -117,7 +118,6 @@
             layout="@layout/error_view"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginTop="@dimen/_8sdp"
             app:errorMessage="@{viewModel.errorState}"
             app:errorState="@{!viewModel.errorState.isEmpty()}"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -130,7 +130,6 @@
             layout="@layout/loading_view"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginTop="@dimen/_8sdp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

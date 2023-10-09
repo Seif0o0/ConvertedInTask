@@ -1,15 +1,16 @@
 package com.convertedin.task.utils
 
-import android.content.Context
+import android.app.Application
+
 
 object StringResource {
-    private var context :Context? = null
+    private var context: Application? = null
 
-    fun init(context: Context){
+    fun init(context: Application) {
         this.context = context
     }
 
-    fun getString(resId:Int):String{
+    fun getString(resId: Int): String {
         context?.let {
             return it.getString(resId)
         }
